@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Screen Properties</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+        h2{
+                font-size: 16pt;
+                color: #ef3813;
+                font-family: verdana;
+            }
+            .outText{
+                font-size: 12pt;
+                color: #e4c08e;
+                background-color:#ef3813;
+                font-family: verdana;
+            }
+    </style>
+    <script language="JavaScript">
+        function showScreen(){
+            var display="<h2>Your screen has the following characteristics:</h2><div class=outText><b><br>";
+            var screenSee=new Array(5);
+            screenSee[0] ="Available screen height="+screen.availHeight;
+            screenSee[1] ="Available screen width"+screen.availWidth;
+            screenSee[2] ="You have "+(screen.colorDepth)+"bit color.";
+             screenSee[3] ="Your screen is"+screen.height+"pixels high";
+             screenSee[4] ="and"+screen.widthF+"pixels wide.";
+             for (var counter=0;counter<screenSee.length;counter++){
+                 display+=screenSee[counter]+"<br>";
+             }
+             display+="<br></b></div>"
+             document.write(display);
+        }
+        showScreen();
+    </script>
+    </head>
+    <body bgcolor="#fbf4eb">
+        
+    </body>
+</html>

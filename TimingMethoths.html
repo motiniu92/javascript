@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Timing Method</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var cupUp = new Image();
+            cupUp.src = "FJ-1019-CappuccinoCup190ml-Feijoa-Cropped_1024x1024.jpg";
+            var cupDown = new Image();
+            cupDown.src = "Demitasse_grande.jpg";
+            var alpha;
+            function interval() {
+                alpha = window.setInterval("document.cup.src=cupDown.src", 3000);
+            }
+            ;
+            function timeOut() {
+                window.setTimeout("document.cup.src=cup.src", 5000);
+                windows.clearInterval(alpha);
+            }
+        </script>
+    </head>
+    <body>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%" align="center">
+            <tr valign="Middle">
+                <td align="center"><img name="cup" src="FJ-1019-CappuccinoCup190ml-Feijoa-Cropped_1024x1024.jpg"
+                                        alt="java"width="64" height="38"<p>
+                        <a href="#" onClick="interval()">Interval</a> 
+                        &nbsp;&nbsp; &nbsp; &nbsp;
+                        <a href="#" onClick="timeout()">Time out</a> 
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </body>
+</html>

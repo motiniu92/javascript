@@ -1,0 +1,22 @@
+h3{
+    color: #c6d699;
+    background-color: #86ba8;
+    font-family: verdana;
+    font-size: 16pt;
+}
+.bod{
+    color: #731224;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 11pt;
+}
+a:link{
+    color: #8d6ba8;
+    background-color: #c6d699;
+    
+}
+h2{
+    color: #8d6ba8;
+    background-color: #c6d699;
+    font-size: 14pt;
+}

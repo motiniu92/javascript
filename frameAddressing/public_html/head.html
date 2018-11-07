@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Header</title>
+        <style type="text/css">
+            body{font-family: verdana}
+        </style>
+        <script language="JavaScript">
+            function message(){
+                parent.data.document.forms[0].value="Greetings";
+            }
+         </script>
+    </head>
+    <body bgColor=#ee9caa>
+        <h3>Header</h3>
+        <form>
+            <input type=text>
+            <input type=button value="Redecorate" onclick="message()">
+        </form>
+    </body>
+</html>
